@@ -37,9 +37,10 @@ fn vokal_abfrage() -> bool {
     */
 
     match first_character {
+        //die {} braucht man hier nicht unbedingt, nur sobald man mehr als eine Aktion ausgeführt haben will
         //statt if kann auch ein match konstrukt verwendet werden
         Some('A') => {
-            //Vergleicht Muster1 (A) mit dem Wert (first_character), wenn true, wird die Aktion ausgeführt
+            //Vergleicht Muster1 (A) mit dem Wert (first_character), wenn true, wird die Aktion ausgeführt, sonst nächsten case abfragen
             println!("Starts with A!");
             true
         }
